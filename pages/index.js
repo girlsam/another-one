@@ -1,15 +1,10 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
+import Main from '../components/Main';
+import Toggle from '../components/Toggle';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Oy!</title>
-      </Head>
-      <main>
-        <h1>Hey, world! I'm Sam.</h1>
-      </main>
-    </div>
-  )
+    <Main>
+      <Toggle />
+    </Main>
+  );
 }
