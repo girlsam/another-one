@@ -18,11 +18,11 @@ a {
 body.dark-mode {
   background-color: #121212;
   color: #fff;
-  transition: 0.15s all ease-in-out;
+  /* transition: 0.15s all ease-in-out; */
 }
 
 body.light-mode {
   background-color: #fff;
   color: #121212;
-  transition: 0.15s all ease-in-out;
+  /* transition: 0.15s all ease-in-out; */
 }
