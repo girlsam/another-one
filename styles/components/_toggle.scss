@@ -1,0 +1,27 @@
+button {
+  height: 2em;
+  width: 10em;
+  border: none;
+  font-size: 1.25rem;
+
+  &:focus {
+    outline: medium;
+    outline-color: red;
+  }
+}
+
+.light-mode {
+  button {
+    background: #2f2346;
+    color: white;
+    font-size: 2em;
+  }
+}
+
+.dark-mode {
+  button {
+    background: #9F75EB;
+    color: black;
+    font-size: 2em;
+  }
+}

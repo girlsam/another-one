@@ -1,3 +1,12 @@
+@import './_variables.scss';
+
+@import './components/_body.scss';
+@import './components/_toggle.scss';
+
+:root {
+  --accent: #9F75EB;
+}
+
 html,
 body {
   padding: 0;
@@ -13,16 +22,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-body.dark-mode {
-  background-color: #121212;
-  color: #fff;
-  /* transition: 0.15s all ease-in-out; */
-}
-
-body.light-mode {
-  background-color: #fff;
-  color: #121212;
-  /* transition: 0.15s all ease-in-out; */
 }

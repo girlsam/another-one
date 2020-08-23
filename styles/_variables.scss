@@ -1,0 +1,31 @@
+/* background */
+$light-mode-background: #FFFEFE;
+$dark-mode-background: #121212;
+
+/* font color */
+$light-mode-font-color: #000080;
+$dark-mode-font-color: #FFFEFE;
+
+/* accent colors */
+
+/* font sizes */
+$base-font-size: 1rem;
+$p: $base-font-size;
+
+$h1: 1.5rem;
+$h2: 1.3125rem;
+$h3: 1.15rem;
+$h4: $base-font-size;
+$h5: 0.875rem;
+$h6: 0.75rem;
+
+/* font weight */
+$header-font-weight: bolder;
+
+/* spacing */
+$spacing-xl: 2rem;
+$spacing-lg: 1.5rem;
+$spacing-base: 1rem;
+$spacing-md: 0.75rem;
+$spacing-sm: 0.5rem;
+$spacing-xs: 0.25rem;
