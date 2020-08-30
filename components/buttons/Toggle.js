@@ -4,10 +4,13 @@ import useDarkMode from 'use-dark-mode';
 const Toggle = () => {
   const darkMode = useDarkMode(false);
 
-  
   return (
-    <button type="button" onClick={ darkMode.toggle }>
-      Toggle Theme
+    <button
+      type="button"
+      aria-pressed={ darkMode.value }
+      onClick={ () => darkMode.toggle() }
+    >
+      Toggle {darkMode.value ? 'light' : 'dark'} mode
     </button>
   );
 }
