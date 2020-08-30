@@ -2,10 +2,7 @@
 
 @import './components/_body.scss';
 @import './components/_toggle.scss';
-
-:root {
-  --accent: #9F75EB;
-}
+@import './components/_main.scss';
 
 html,
 body {

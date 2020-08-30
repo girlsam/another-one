@@ -6,15 +6,16 @@
   align-items: center;
 }
 
-.light-mode {
-  .title {
-    background-image: linear-gradient(
-      transparent 0%, 
-      transparent 45%, var(--accent) 45%, 
-      var(--accent) 90%, transparent 90%
-    );
-  }
-}
+// TODO: Think this one out more
+// .light-mode {
+//   .title {
+//     background-image: linear-gradient(
+//       transparent 0%, 
+//       transparent 45%, $light-accent-color 45%, 
+//       $light-accent-color 90%, transparent 90%
+//     );
+//   }
+// }
 
 body.dark-mode {
   background-color: #121212;
@@ -26,4 +27,8 @@ body.light-mode {
   background-color: #fff;
   color: #121212;
   transition: 0.15s all ease-in-out;
+}
+
+button {
+  
 }

@@ -3,8 +3,9 @@ import Toggle from '../components/buttons/Toggle';
 
 export default function Home() {
   return (
-    <Body>
+    <main>
       <Toggle />
-    </Body>
+      <Body />
+    </main>
   );
 }

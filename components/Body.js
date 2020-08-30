@@ -1,8 +1,8 @@
 const Body = ({ children }) => (
-  <main className="container">
+  <section class="container">
     <h1 className="title">Hey, world! I'm Sam.</h1>
     { children }
-  </main>
+  </section>
 );
 
 export default Body;
