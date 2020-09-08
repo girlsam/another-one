@@ -4,18 +4,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1440px;
+  padding: 0 $spacing-xl;
 }
 
 // TODO: Think this one out more
-// .light-mode {
-//   .title {
-//     background-image: linear-gradient(
-//       transparent 0%, 
-//       transparent 45%, $light-accent-color 45%, 
-//       $light-accent-color 90%, transparent 90%
-//     );
-//   }
-// }
+.light-mode {
+  .title {
+    background-image: linear-gradient(
+      transparent 0%, 
+      transparent 45%, $light-accent-color 45%, 
+      $light-accent-color 90%, transparent 90%
+    );
+  }
+}
 
 body.dark-mode {
   background-color: #121212;

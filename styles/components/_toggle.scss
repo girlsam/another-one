@@ -5,12 +5,28 @@ button {
   border: 0;
   border-radius: 40px;
   font-size: $h6;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px;
+  }
 }
 
 .light-mode {
   button {
     background-color: $dark-mode-background;
     color: $dark-mode-font-color;
+    transition: all .15s ease-in;
+    
+    &:hover {
+      background-color: $light-mode-background;
+      border: 2px solid $dark-mode-background;
+      color: $dark-mode-background;
+    }
+
+    &:focus {
+      outline: 2px solid $light-accent-color;
+    }
   }
 }
 
@@ -18,5 +34,15 @@ button {
   button {
     background-color: $light-mode-background;
     color: $dark-mode-background;
+    transition: all .15s ease-in;
+
+    &:hover {
+      background-color: $dark-mode-background;
+      color: $dark-mode-font-color;
+    }
+
+    &:focus {
+      outline: 1px solid $light-mode-background;
+    }
   }
 }

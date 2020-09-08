@@ -7,10 +7,11 @@ const Toggle = () => {
   return (
     <button
       type="button"
+      aria-labelledby="toggle"
       aria-pressed={ darkMode.value }
       onClick={ () => darkMode.toggle() }
     >
-      Toggle {darkMode.value ? 'light' : 'dark'} mode
+      <span id="toggle">Toggle {darkMode.value ? 'light' : 'dark'} mode</span>
     </button>
   );
 }
