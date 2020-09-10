@@ -2,7 +2,7 @@
 const lightModeBg = '#FFFEFE';
 const darkModeBg = '#121212';
 
-const lightModeFontColor = '#000080';
+const lightModeFontColor = darkModeBg;
 const darkModeFontColor = lightModeBg;
 
 const lightAccentColor = '#9F75EB';
