@@ -15,8 +15,6 @@ class MyDocument extends Document {
 
       const initialProps = await Document.getInitialProps(ctx);
 
-      console.log(sheet.collectStyles())
-
       return {
         ...initialProps,
         styles: (
@@ -34,7 +32,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>{this.props.styles}</Head>
+        <Head />
         <body>
           <script src="noflash.js"></script>
           <Main />
