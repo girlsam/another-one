@@ -15,6 +15,10 @@ a {
   box-sizing: border-box;
 }
 
+ul, ol {
+  list-style: none;
+}
+
 body.dark-mode {
   background-color: #121212;
   color: #fff;

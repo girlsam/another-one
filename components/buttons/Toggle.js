@@ -12,7 +12,7 @@ const Button = styled.button`
   color: ${({ darkMode, theme }) =>
     darkMode.value ? theme.colors.light : theme.colors.dark
   };
-  font-size: ${({ theme }) => theme.fontSizes.h6};
+  font-size: ${({ theme }) => theme.fontSize.h5};
   cursor: pointer;
 `;
 
