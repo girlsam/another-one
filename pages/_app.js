@@ -1,7 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 
 import theme from '../styles/theme';
-
 import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
