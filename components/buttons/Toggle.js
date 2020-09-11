@@ -26,7 +26,7 @@ const Button = styled.button`
   &:hover {
     background-color: ${ ({ darkMode, theme }) => 
       !darkMode.value ? theme.background.light : theme.background.dark };
-    border: 1.5px solid ${ ({ darkMode, theme }) => 
+    border: 1px solid ${ ({ darkMode, theme }) => 
       darkMode.value ? theme.background.light : theme.background.dark };
     color: ${ ({ darkMode, theme }) => 
       !darkMode.value ? theme.colors.light : theme.colors.dark };
