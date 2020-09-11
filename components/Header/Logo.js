@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Link from 'next/link';
 
 import Skier from '../Svg/Skier';
 
@@ -18,6 +19,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-left: ${({ theme }) => theme.spacing.spacingXl};
+  cursor: pointer;
 `;
 
 const Svg = styled.svg`
@@ -31,12 +33,16 @@ const Svg = styled.svg`
 `;
 
 const Logo = ({ darkMode }) => (
-  <Container>
-    <Svg darkMode={ darkMode.value } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.998 511.998">
-      <Skier />
-    </Svg>
-    <Header>girlsam</Header>
-  </Container>
+  <Link href="/">
+    <Container>
+      <Svg darkMode={ darkMode.value } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.998 511.998">
+        <Skier />
+      </Svg>
+      <Header>girlsam</Header>
+    </Container>
+  </Link>
 );
 
-export default Logo;
+export default styled(Logo)`
+  cursor: pointer;
+`;
