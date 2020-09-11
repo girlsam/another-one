@@ -6,6 +6,11 @@ const Header = styled.h1`
   font-family: 'Bad Script', serif;
   font-weight: lighter;
   margin-left: ${({ theme }) => theme.spacing.spacingSm};
+  font-size: 1.5rem;
+
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
 `;
 
 const Container = styled.div`
@@ -18,9 +23,11 @@ const Container = styled.div`
 const Svg = styled.svg`
   stroke-width: 1px;
   fill: ${({ darkMode, theme }) => darkMode ? theme.background.light : theme.background.dark};
-  height: 3rem;
-
+  height: 2rem;
   
+  @media (min-width: 1024px) {
+    height: 3rem;
+  }
 `;
 
 const Logo = ({ darkMode }) => (
