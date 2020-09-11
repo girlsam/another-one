@@ -5,10 +5,14 @@ import Toggle from '../buttons/Toggle';
 import Logo from './Logo';
 
 const HeaderContainer = styled.header`
-  height: 100px;
+  height: 70px;
   border-bottom: 1.5px solid ${({ darkMode, theme }) => darkMode.value ? theme.colors.dark : theme.colors.light };
   display: flex;
   padding-right: ${({ theme }) => theme.spacing.spacingXl};
+
+  @media (${({ theme }) => theme.devices.mobileLg}) {
+    min-height: 100px;
+  }
 `;
 
 const NavContainer = styled.div`

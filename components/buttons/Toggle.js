@@ -6,7 +6,7 @@ import Sun from '../Svg/Sun';
 import Moon from '../Svg/Moon';
 
 const Button = styled.button`
-  width: 5rem;
+  width: 3rem;
   height: 3rem;
   background-color: ${ ({ darkMode, theme }) => 
     darkMode.value ? theme.background.light : theme.background.dark };
@@ -40,7 +40,7 @@ const Button = styled.button`
     display: none;
   }
 
-  @media (min-width: 1024px) {
+   @media (${({ theme }) => theme.devices.mobileLg}) {
     span {
       display: block;
     }
@@ -55,7 +55,7 @@ const Svg = styled.svg`
   fill: ${({ darkMode, theme }) => !darkMode.value ? theme.background.light : theme.background.dark};
   margin-left: 0;
 
-  @media (min-width: 1024px) {
+   @media (${({ theme }) => theme.devices.mobileLg}) {
     margin-left: ${({ theme }) => theme.spacing.spacingSm};
   }
 `;

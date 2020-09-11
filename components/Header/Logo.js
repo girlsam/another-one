@@ -6,9 +6,9 @@ const Header = styled.h1`
   font-family: 'Bad Script', serif;
   font-weight: lighter;
   margin-left: ${({ theme }) => theme.spacing.spacingSm};
-  font-size: 1.5rem;
+  font-size: 2rem;
 
-  @media (min-width: 1024px) {
+   @media (${({ theme }) => theme.devices.mobileLg}) {
     font-size: 3rem;
   }
 `;
@@ -25,7 +25,7 @@ const Svg = styled.svg`
   fill: ${({ darkMode, theme }) => darkMode ? theme.background.light : theme.background.dark};
   height: 2rem;
   
-  @media (min-width: 1024px) {
+  @media (${({ theme }) => theme.devices.mobileLg}) {
     height: 3rem;
   }
 `;
