@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 import useDarkMode from 'use-dark-mode';
 
-import Toggle from './buttons/Toggle';
+import Toggle from '../buttons/Toggle';
+import Logo from './Logo';
 
 const HeaderContainer = styled.header`
-  height: 10vh;
+  height: 100px;
   border-bottom: 1.5px solid ${({ darkMode, theme }) => darkMode.value ? theme.colors.dark : theme.colors.light };
   display: flex;
-  padding-right: ${({ theme }) => theme.spacing.spacingSm};
+  padding-right: ${({ theme }) => theme.spacing.spacingXl};
 `;
 
 const NavContainer = styled.div`
@@ -31,6 +32,7 @@ const Header = () => {
 
   return (
     <HeaderContainer darkMode={ darkMode }>
+      <Logo darkMode={ darkMode }/>
       <NavContainer>
         <Nav>
           <ul>
