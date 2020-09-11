@@ -6,7 +6,7 @@ import Sun from '../Svg/Sun';
 import Moon from '../Svg/Moon';
 
 const Button = styled.button`
-  width: 12rem;
+  width: 5rem;
   height: 3rem;
   background-color: ${ ({ darkMode, theme }) => 
     darkMode.value ? theme.background.light : theme.background.dark };
@@ -35,12 +35,29 @@ const Button = styled.button`
       fill: ${({ darkMode, theme }) => darkMode.value ? theme.background.light : theme.background.dark};
     }
   }
+
+  span {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    span {
+      display: block;
+    }
+
+    width: 12rem;
+    margin-left: 0;
+  }
 `;
 
 const Svg = styled.svg`
   height: 1.5rem;
   fill: ${({ darkMode, theme }) => !darkMode.value ? theme.background.light : theme.background.dark};
-  margin-left: ${({ theme }) => theme.spacing.spacingSm};
+  margin-left: 0;
+
+  @media (min-width: 1024px) {
+    margin-left: ${({ theme }) => theme.spacing.spacingSm};
+  }
 `;
 
 const Toggle = () => {
@@ -52,7 +69,7 @@ const Toggle = () => {
       aria-pressed={ darkMode.value }
       onClick={ () => darkMode.toggle() }
       darkMode={ darkMode }
-      aria-labelledBy="toggle-text"
+      aria-labelledby="toggle-text"
     >
       <span id="toggle-text">Toggle { darkMode.value ? 'light' : 'dark' } mode</span>
     <Svg 

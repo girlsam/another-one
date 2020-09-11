@@ -1,3 +1,5 @@
+import devices from './device';
+
 /* color scheme */
 const lightModeBg = '#FFFEFE';
 const darkModeBg = '#121212';
@@ -41,6 +43,7 @@ const theme = {
   },
   fontSize: { baseFontSize, p, h1, h2, h3, h4, h5, h6 },
   spacing: { spacingXl, spacingLg, spacingBase, spacingLg, spacingMd, spacingSm, spacingXs },
+  devices
 };
 
 export default theme;

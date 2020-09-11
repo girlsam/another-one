@@ -19,6 +19,8 @@ const Svg = styled.svg`
   stroke-width: 1px;
   fill: ${({ darkMode, theme }) => darkMode ? theme.background.light : theme.background.dark};
   height: 3rem;
+
+  
 `;
 
 const Logo = ({ darkMode }) => (
